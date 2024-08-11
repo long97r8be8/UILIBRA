@@ -403,7 +403,26 @@ if not _env.LoadedFarm then
 end
 
 local sitinklib = loadstring(game:HttpGet("https://github.com/ErutTheTeru/uilibrary/blob/main/Sitink%20Lib/Source.lua?raw=true"))()
-local Window = sitinklib:MakeWindow({ Title = "LongHuy Hub V2 : Meme Sea", SubTitle = "by LongHuy", SaveFolder = "LHHub-MemeSea.json" })
+local Notify = sitinklib:Notify({
+	["Title"] = "LongHuy Hub",
+	["Description"] = "- from Teru",
+	["Color"] = Color3.fromRGB(127.00000002980232, 146.00000649690628, 242.00000077486038),
+	["Content"] = "Welcome to LongHuy Hub",
+	["Time"] = 1,
+	["Delay"] = 10
+})
+local sitinkgui = sitinklib:Start({
+    ["Name"] = "LongHuyV2 Hub",
+    ["Description"] = "- from Teru UI",
+    ["Info Color"] = Color3.fromRGB(5.000000176951289, 59.00000028312206, 113.00000086426735),
+    ["Logo Info"] = "rbxassetid://18811558048",
+    ["Logo Player"] = "rbxassetid://18811558048",
+    ["Name Info"] = "Havanlong_ Info",
+    ["Name Player"] = "Havanlong_",
+    ["Info Description"] = "discord.gg/3Aatp4Nhjp",
+    ["Tab Width"] = 135,
+    ["Color"] = Color3.fromRGB(127.00000002980232, 146.00000649690628, 242.00000077486038),
+    ["CloseCallBack"] = function() end
 Window:AddMinimizeButton({
   Button = { Image = "rbxassetid://18811558048", BackgroundTransparency = 0 },
   Corner = { CornerRadius = UDim.new(0, 6) }
