@@ -1,11 +1,3 @@
---[[
-  Dev: VanLong2k12
-  Lib: LongHuyLibV5
-  github: LongHuyHUB | Premium
-  
-  Game: Roblox-MemeSea
-]]
-
 local _wait = task.wait
 repeat _wait() until game:IsLoaded()
 local _env = getgenv and getgenv() or {}
